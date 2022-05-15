@@ -1,11 +1,12 @@
 class QueueStackDemo {
 
 	public static void main(String[] args)  {
-		/*
+		
 		Queue<Integer> queue = new Queue<Integer>(5);
 		//equeue 2 4 6 8 10 at the end
         queue.enqueue(2);
 		queue.enqueue(4);
+		
 		queue.enqueue(6);
 		queue.enqueue(8);
 		queue.enqueue(10);
@@ -14,13 +15,22 @@ class QueueStackDemo {
 		queue.dequeue();
 		//enqueue 12 and 14 at the end
         queue.enqueue(12);
-        queue.enqueue(14);
-
+        queue.enqueue(14); 
+		
+		
+		System.out.println(queue.getCurrentSize());
         System.out.println("Queue:");
         while(!queue.isEmpty()){
                 System.out.print(queue.dequeue()+" ");
-         }*/
-            
+         }
+      
+		
+        while(!queue.isEmpty()){
+            System.out.print(queue.dequeue()+" ");
+        }
+        
+        
+         /*   
         Stack<Integer> stack = new Stack<Integer>(3);
  
         stack.push(1);      // inserting 1 in the stack
@@ -42,6 +52,6 @@ class QueueStackDemo {
         }
         else {
             System.out.println("The stack is not empty");
-        }
+        }*/
     }
 }
